@@ -11,13 +11,12 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Hello World</Text>
-      <Link href={{
+      <Link style={styles.text} href={{
           pathname: '/Page',
-          params: {id: id}
+          params: {id}
         }}>Click Here</Link>
-
-        <Button title="ola mundo" onPress={() => router.navigate('/Page')} />
+        <Text></Text>
+        <Button title="Go To Page One" onPress={() => router.navigate('/Page')} />
     </View>
   );
 }
@@ -29,5 +28,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text:{
+    fontSize:30
+  }
   
 });
