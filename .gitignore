@@ -34,3 +34,7 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+*.pub
+*.pem
+*.key
+.ssh/
